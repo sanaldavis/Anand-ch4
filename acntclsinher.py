@@ -20,20 +20,20 @@ class Mini(Bank):
 		self.minibal=minibal
 
 	def withdrw(self,amount):
-		if self.balance-amount < self.minibal:
+		if self.bal-amount < self.minibal:
 			print "cant"
 		else:
-			Bank.withdrw(self,amount)
+			print Bank.wit(self,amount)
 	def dep(self,amount):
-		Bank.dep(self,amount)
+		print Bank.dep(self,amount)
 
 
 a=Mini(100)
-print a.dep(100)
-print a.dep(300)
-print a.withdrw(100)
+a.dep(100)
+a.dep(300)
+a.withdrw(350)
 b=Mini(100)
-print b.dep(4000)
-print b.dep(1000)
-print b.withdrw(345)
+b.dep(4000)
+b.dep(1000)
+b.withdrw(345)
 
